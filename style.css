@@ -5,6 +5,91 @@
     --paleBlue: hsl(225, 100%, 94%);
     --brightBlue: hsl(245, 75%, 52%);
     --veryPaleBlue: hsl(225, 100%, 98%);
-    --desaturatedBlue: hsl(224, 23%, 55%);
+    --desaturatedBlue: hsla(224, 30%, 78%, 0.116);
+    --desaturatedBlue2: hsl(224, 23%, 55%);
     --darkBlue: hsl(223, 47%, 23%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paleBlue);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    border-radius: 15px;
+}
+
+.ilu {
+    width: 350px;
+    border-radius: 15px 15px 0 0;
+}
+
+.container h2 {
+    font-weight: 900;
+    color: var(--darkBlue);
+}
+
+.info {
+    margin-top: 0;
+    text-align: center;
+    color: var(--desaturatedBlue2);
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    background: var(--desaturatedBlue);
+    border-radius: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.name_plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.name_plan h3 {
+    margin-bottom: 0;
+    color: var(--darkBlue);
+}
+
+.name_plan p {
+    margin-top: 0;
+    font-size: 15px;
+    color: var(--desaturatedBlue2);
+}
+
+.plan span {
+    text-decoration: underline;
+    color: var(--brightBlue);
+    font-weight: 700;
 }
