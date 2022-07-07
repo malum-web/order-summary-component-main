@@ -32,28 +32,39 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 350px;
-    justify-content: center;
+    width: 370px;
+    justify-content: space-around;
     align-items: center;
     background: whitesmoke;
     border-radius: 15px;
 }
 
 .ilu {
-    width: 350px;
+    width: 370px;
     border-radius: 15px 15px 0 0;
+}
+
+.text_container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    gap: 10px;
 }
 
 .container h2 {
     font-weight: 900;
     color: var(--darkBlue);
+    margin-top: 40px;
+    margin-bottom: 0;
 }
 
 .info {
-    margin-top: 0;
     text-align: center;
     color: var(--desaturatedBlue2);
     font-size: 16px;
+    width: 270px;
 }
 
 .plan {
@@ -61,7 +72,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 300px;
+    width: 280px;
     background: var(--desaturatedBlue);
     border-radius: 15px;
     padding: 10px;
@@ -98,20 +109,27 @@ body {
     color: var(--brightBlue);
     font-weight: 700;
     margin-left: 50px;
+    font-size: 15px;
+}
+
+.plan span:hover {
+    text-decoration: none;
+    opacity: 0.6;
 }
 
 button {
     cursor: pointer;
     border: none;
     border-radius: 15px;
-    width: 300px;
+    width: 290px;
     height: 40px;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .pay {
+    height: 45px;
     background-color: var(--brightBlue);
     color: whitesmoke;
     box-shadow: 0px 5px 10px 0px hsla(245, 75%, 52%, 0.418);
@@ -123,8 +141,13 @@ button {
     color: var(--desaturatedBlue2);
 }
 
-button:hover {
-    filter: brightness(120%);
+.pay:hover {
+    opacity: 0.8;
+}
+
+.cancel:hover {
+    color: var(--darkBlue);
+    font-weight: 900;
 }
 
 button:active {
@@ -134,5 +157,13 @@ button:active {
 @media screen and (max-width: 375px) {
     body {
         background-image: url(/images/pattern-background-mobile.svg);
+    }
+
+    .container {
+        width: 350px;
+    }
+
+    .ilu {
+        width: 350px;
     }
 }
