@@ -53,6 +53,7 @@ body {
     margin-top: 0;
     text-align: center;
     color: var(--desaturatedBlue2);
+    font-size: 16px;
 }
 
 .plan {
@@ -63,6 +64,7 @@ body {
     width: 300px;
     background: var(--desaturatedBlue);
     border-radius: 15px;
+    padding: 10px;
 }
 
 .icon {
@@ -119,4 +121,18 @@ button {
     margin-bottom: 20px;
     background: none;
     color: var(--desaturatedBlue2);
+}
+
+button:hover {
+    filter: brightness(120%);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
 }
